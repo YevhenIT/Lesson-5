@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //let num
+        // for (let num = 1; num <= 15; num++) {
+        //     document.write('Sorry')
+        // }
+        // document.write(`num = ${num}`)
+        //_________________________________________________________________________________
+
+        // for (let i = 0; i < 100; i++) {
+        //     document.write(`<br> Word`)
+        // }
+
+        //_________________________________________________________________________________
+        // for (let i = 0; i < 5; i++) {
+        //     let num1 = parseInt(prompt("Num1="))
+        //     let num2 = parseInt(prompt("Num2="))
+        //     if (num1 === num2) {
+        //         document.write(`Sum=${num1 + num2}`)
+        //     }
+        //     else {
+        //         let product = num1 * num2
+        //         document.write(`Prod=${product}`)
+        //     }
+        // }
+
+        //_________________________________________________________________________________
+        // let guessedCount = 0
+        // for (let i = 0; i < 6; i++) {
+        //     let compNum = 1 + Math.floor(Math.random() * 10)
+        //     let userNum = parseInt(prompt("Введіть число (від 1 до 10)"))
+        //     if (userNum === compNum) {
+        //         guessedCount++
+        //     }
+        //     document.write(`User: ${userNum},  Comp:${compNum} <br>`)
+        // }
+
+        // //_________________________________________________________________________________
+        // //Поступово вводиться вартості 7 товарів. Знайти загальну вартість
+        // let sum = 0
+        // for (let i = 0; i < 7; i++) {
+        //     const productPrice = parseFloat(prompt('Pruct price'))
+        //     sum += productPrice
+        // }
+        // document.write(`Total = ${sum}`)
+
+        // //_________________________________________________________________________________
+        // //Поступово вводиться вартості 7 товарів із зазначенням номера товару. Знайти загальну вартість
+        // let sum = 0
+        // for (let i = 0; i < 7; i++) {  // abo (let i = 1; i <= 7; i++)
+        //     const productPrice = parseFloat(prompt(`Product ${i + 1} price`))  // abo (`Product ${i} price`)
+        //     sum += productPrice
+        // }
+        // document.write(`Total = ${sum}`)
+
+        // //_________________________________________________________________________________
+        // //Знадача. Вивести номер місяца другого півріччя (номери місяців від 6 до 12)
+        // for (let month = 7; month < - 12; month++) {
+        //     document.write(`<div> Місяц ${month} </div>`)
+        // }
+
+        // //_________________________________________________________________________________
+        // //Задача. Вивести суми сплаченого кредиту. Початковий внесок 5000грн, кінцевий 15000, а щомісячний внесок 2000грн
+        // for (let creditValue = 5000; creditValue <= 15000; creditValue += 2000)
+        //     document.write(`<div> Місяц ${creditValue} </div>`)
+
+        //_________________________________________________________________________________
+        // let total = 0
+        // for (let weekNum = 1; weekNum <= 3; weekNum++) {
+        //     for (let dayNum = 1; dayNum <= 3; dayNum++) {
+        //         const income = parseFloat(prompt(`Тиждень ${weekNum}    дeнь ${dayNum}`))
+        //         total += income
+        //     }
+        // }
+        // document.write(`Total ${total}`)
+
+        //_________________________________________________________________________________
+        // let correctAnswersNumber = 0
+        // for (let num = 0; num <= 4; num++) {
+        //     const element = array[num];
+        //     const num1 = 1 + Math.floor(Math.random() * 9)
+        //     const num2 = 1 + Math.floor(Math.random() * 9)
+        //     const userAnswer = parseInt(prompt(`${num1} * ${num2} = `))
+        //     correctAnswer === num1 * num2
+        //     if (userAnswer === correctAnswer) {
+        //         alert('Ok')
+        //         correctAnswersNumber++
+        //     }
+        //     else
+        //         alert('Erro. Correct: ${num1*num2}')
+
+        // }
+        // alert('correctAnswersNumber')
+
+        //_________________________________________________________________________________
+        //Вводить початкову кількість булочок, які треба продати. Поки залишаються булочки продавати їх клієнтам
+        // let bunsNumber = parseInt(prompt('Початкова кількість булочек'))
+
+        // while (bunsNumber > 0) {
+        //     const clientsBunsNumber = parseInt(prompt('Скількі ви хочете булочек?'))
+        //     if (clientsBunsNumber <= bunsNumber) {
+        //         alert('Заберіть булочки')
+        //         bunsNumber -= clientsBunsNumber
+        //     }
+        //     else
+        //         alert('немає такої кількості')
+        // }
+        // alert('товар продан')
+
+        //_________________________________________________________________________________
+        //З клавиатури вводиться два числа N i M (N<M). Вивести на екран числа
+        //N---M
+        //N+1 --- M-1
+        //N+2 --- M-2
+        //N+3 --- M-3
+        // let N = 2, M = 7
+        // while (N < M) {
+        //     document.write(`${N} - ${M} <br>`)
+        //     N++
+        //     M--
+        // }
+
+        //_________________________________________________________________________________
+        //З клавіатури вводиться поступово двоцифрові числа. Знаходимо їх добуток поки не буде введено 0.
+        // let product = 1
+        // let userNumber = 1
+        // do {
+        //     product *= userNumber
+        //     userNumber = parseInt(prompt('Введіть число'))
+        // } while (userNumber !== 0);
+        // document.write(`Product = ${product}`)
+
+        //_________________________________________________________________________________
+        // Оператор break
+        // Поступово вводити 10 цілих чисел і знайти їх суму. Якщо буде введено некоректне число, то припинити знаходження суми
+        // let sum = 0
+        // for (let i = 0; i < 10; i++) {
+        //     let num = parseInt(prompt('Number = '))
+        //     if (!isFinite(num))  //Якщо заначення некоректне - припинити
+        //         break;
+        //     sum += num
+        // }
+        // document.write(`Sum = ${sum}`)
+
+        //_________________________________________________________________________________
+        //Приклад. 3 рази дати можливість ввести пароль (правильний пароль <<123>>)
+        // let isLoggedIn = false
+        // for (let i = 0; i < 3; i++) {
+        //     //ввести пароль
+        //     const password = prompt('Введіть парполь')
+        //     //Якщо правильний, то припинити введення
+        //     if (password === '123') {
+        //         isLoggedIn = true
+        //         break;
+        //     }
+        // }
+
+        // if (isLoggedIn)
+        //     alert('Вітаю')
+        // else
+        //     alert('У доступі відмовлено')
+
+        //_________________________________________________________________________________
+        //Дано 3 сайти, на яких користувач хоче купити по 2 товари. Але якщо гроші закінчились, то зрозумло, що припиняється
+        // let userMoney = parseFloat(prompt('Почткова кількість грошей користувача'))
+        // sitesLabel: for (let sistesNum = 1; sistesNum <= 3; sistesNum++) {
+        //     for (let productNum = 1; productNum <= 2; productNum++) {
+        //         const productPrice = parseFloat(prompt(`Site :${sistesNum}, product num : ${productNum}`))
+        //         if (productPrice <= userMoney) {
+        //             alert('Товар куплено')
+        //             userMoney -= productPrice
+        //         }
+        //         if (userMoney === 0)
+        //             break sitesLabel
+        //     }
+        // }
+
+        //_________________________________________________________________________________
+        //Знайти найбільщі 2 числа з 4-х цілих чисел
+        // const num1 = parseInt(prompt('Num1'))
+        // const num2 = parseInt(prompt('Num2'))
+        // const num3 = parseInt(prompt('Num3'))
+        // const num4 = parseInt(prompt('Num4'))
+        // let max1, max2
+        // //max1>=max2
+        // if (num1 > num2) {
+        //     max1 = num1
+        //     max2 = num2
+        // }
+        // else {
+        //     max1 = num2
+        //     max2 = num1
+        // }
+
+        // if (num3 > num1) {
+        //     max2 = max1
+        //     max1 = num3
+        // }
+        // else if (num3 > max2) max2 = num3
+
+        // if (num4 > max1) {
+        //     max2 = max1
+        //     max1 = num4
+        // }
+        // else if (num4 > max2) max2 = num4
+        // document.write(`max1 = ${max1} , max2 = ${max2}`)
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

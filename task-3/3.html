@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let evenCount = 0; // Лічильник парних чисел
+        let oddCount = 0; // Лічильник непарних чисел
+
+        for (let i = 0; i < 100; i++) {
+            const randomNumber = Math.floor(Math.random() * 1000) + 1; // Генеруємо випадкове число від 1 до 1000
+
+            if (randomNumber % 2 === 0) {
+                // Якщо число парне
+                evenCount++;
+            } else {
+                // Якщо число непарне
+                oddCount++;
+            }
+        }
+
+        document.write(`Кількість парних чисел: ${evenCount} <br>`);
+        document.write(`Кількість непарних чисел: ${oddCount}`);</script>
+</body>
+
+</html>
